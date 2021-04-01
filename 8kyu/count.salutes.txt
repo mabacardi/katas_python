@@ -1,0 +1,9 @@
+# https://www.codewars.com/kata/605ae9e1d2be8a0023b494ed/train/python
+def count_salutes(hallway):
+    salutes= 0
+    rights = 0
+    for p in hallway:
+        if p == ">":
+            rights += 1
+        if p== "<":
+            salutes += 2*rights
